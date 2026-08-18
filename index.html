@@ -1,1 +1,459 @@
-<h1>Hello World Wide Web!</h1>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Dance With Eva</title>
+  </head>
+  <style>
+    body {
+      background-color: #000000
+    }
+
+    @font-face {
+      font-family: "title";
+      src: url("EricaOne-Regular.ttf");
+    }
+
+    @font-face {
+      font-family: "Quicksand";
+      src: url("Quicksand-VariableFont_wght.ttf")
+    }
+
+    .main-title {
+    text-align: center;
+    width: 100%;
+      height: auto;
+    
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      padding-bottom: 10px;
+      
+    }
+
+    .bio {
+      font-family: "Quicksand";
+      font-size: 150%;
+      text-align: center;
+      color: #ded9cc;
+
+
+
+    }
+
+    .end {
+      font-family: "Quicksand";
+      font-size: large;
+      text-align: center;
+      color: #28283c;
+      padding-bottom: 10px;
+      padding-top: 5px;
+    }
+
+    .Header {
+      height: 200px;
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+
+
+    .mains {
+      color: #ded9cc;
+      font-family: "title";
+      font-size: 50px;
+      position: relative;
+      top: 15px
+    }
+
+
+
+
+    .description {
+      font-family: "Quicksand";
+      font-size: large;
+      text-align: center;
+      text-wrap: wrap;
+      color: #ded9cc
+    }
+
+    .flier-container {
+      border-bottom: #ded9cc 3px solid;
+      padding-bottom: 3vh;
+      padding-top: 3vh;
+      overflow-x: scroll;
+      white-space: nowrap
+    }
+
+    .flier-container::-webkit-scrollbar {
+      display: none
+    }
+
+    .flier {
+      position: relative;
+      transition: transform .7s ease;
+      display: inline-block;
+    }
+
+    .flier-disc {
+      display: none;
+      font-size: 12px;
+      width: 250px;
+      text-align: left;
+      position: absolute;
+      left: calc(100% + 1vw);
+      top: 0;
+      overflow-y: scroll;
+
+
+    }
+
+    .flier-disc.show {
+      display: block
+    }
+
+    .flier-disc::-webkit-scrollbar {
+      display: none
+    }
+
+    .flier-img {
+      height: 300px;
+
+    }
+
+    .flier:hover .flier-disc {
+      display: block
+    }
+
+    .img-mini {
+      height: 180px;
+      text-align: center
+    }
+
+    .shift-flier {
+      transform: translateX(280px);
+    }
+
+    .presentation-container {
+      border-bottom: #28283c 3px solid;
+      padding-bottom: 3vh;
+      padding-top: 3vh;
+      overflow-x: scroll;
+      white-space: nowrap
+    }
+
+    .presentation-container::-webkit-scrollbar {
+      display: none
+    }
+
+    .presentation {
+      position: relative;
+      transition: transform .7s ease;
+      display: inline-block;
+    }
+
+    .presentations-img {
+      height: 250px;
+      ;
+
+    }
+
+    .presentation-disc {
+      display: none;
+      font-size: 12px;
+      width: 180px;
+      height: 250px;
+      text-align: left;
+      position: absolute;
+      left: calc(100% + 1vw);
+      top: 0;
+      overflow-y: scroll;
+
+    }
+
+    .presentation-disc::-webkit-scrollbar {
+      display: none
+    }
+
+    .presentation-disc.show {
+      display: block
+    }
+
+    .presentation:hover .presentation-disc {
+      display: block
+    }
+
+    .shift-presentation {
+      transform: translateX(200px);
+    }
+
+    .link-container {
+      text-align: center;
+      flex: center;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-top: 10px
+    }
+
+    .links {
+      height: 50px;
+      width: 50px;
+      object-fit: contain;
+
+    }
+  </style>
+
+
+
+
+  <body>
+    <div class="main-title">
+    <img class=".me" src= "eva-header.png" alt= "Eva header">
+    </div>
+    
+    <div class="profile">
+    
+      <div class="bio">
+        Welcome to Dance with Eva. Please scroll down to take a look at my services, watch me dance, and reach out to me to help make your special day even more special. 
+      </div>
+    </div>
+
+    <div class="mains"> Fliers and Brochures </div>
+    <div class="flier-container">
+
+      <div class="flier">
+        <img class="flier-img" src="Cowboy-Up.png" alt="Flier for an event called Cowboy Up, based on art for Beyonce's 'Cowboy Carter'">
+        <div class="flier-disc">
+          <div class="description">
+            A flier based on a promotional post Beyonce made for the release of her album <i> Cowboy Carter</i>
+            <br>
+            <img class="img-mini" src="cowboy-carter.png" alt="Beyonce's original cowboy carter">
+          </div>
+        </div>
+      </div>
+      <div class="flier">
+
+        <img class="flier-img" src="Senior-Day-Fliers.png" alt="A vibrant flier highlighting some scholarships">
+        <div class="flier-disc">
+
+
+          <div class="description">
+            A handout used during OSU-OKC's Senior Day. It highlighted several scholarships we offered.
+          </div>
+        </div>
+      </div>
+      <div class="flier">
+        <img class="flier-img" src="FAFSA-Popcorn.png" alt="A flier for a FAFSA workshop that was themed around popcorn and movies">
+        <div class="flier-disc">
+
+
+          <div class="description">
+            A flier advertising a FAFSA workshop that was themed around popcorn and movies.
+          </div>
+        </div>
+      </div>
+      <div class="flier">
+        <img class="flier-img" src="FAFSA-Poster-Sci-Fi.png" alt="Poster advertising a FAFSA workshop in the style of a sci-fi movie">
+        <div class="flier-disc">
+
+
+
+          <div class="description">
+            This flier accompanied the other FAFSA Workshop posters and was a part of a collection of other fliers that displayed the same information but in different genres. <br>
+            <img class="img-mini" src="FAFSA-Poster-Horror.png" alt="Poster advertising a FAFSA workshop in the style of a horror movie">
+          </div>
+        </div>
+      </div>
+
+      <div class="flier">
+        <img class="flier-img" src="FAFSA-Ticket-Stuff.png" alt="Six tickets that served as advertisment for a FAFSA Workshop">
+        <div class="flier-disc">
+
+
+          <div class="description">
+            These tickets served as save the dates for the FAFSA Workshop themed around movies. They were cut into individual tickets with varying genres, and students could grab them as a save-the-date. There was a QR code to register for the Eventbrite on the back.
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="flier">
+        <img class="flier-img" src="Brochure-Harvest-Festival.png" alt="The front page of a brochure that was created for an event themed around fall harvest">
+        <div class="flier-disc">
+
+
+          <div class="description">
+            This flier was created for an event that was accompanied by a table decorating contest. We chose the theme "Fall Harvest."
+
+            <br>
+            <img class="img-mini" src="finaid-table.jpg" alt="Financial Aid table decorated like a fall harvest stand">
+          </div>
+        </div>
+      </div>
+      <div class="flier">
+        <img class="flier-img" src="OBS-Flyer.png" alt="The front panel of a blue program for a culture show">
+        <div class="flier-disc">
+
+
+          <div class="description">
+            This is the outside of a program for the Organization of Black Student's annual culture show. A list of performances and performers was on the inside.
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <div class="mains"> Presentations </div>
+    <div class="presentation-container">
+      <div class="presentation">
+        <a href="https://www.canva.com/design/DAGT2OO3HFg/IJmRSeOtyCdzikUG4tMzBA/edit?utm_content=DAGT2OO3HFg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"><img class="presentations-img" src="FAFSA.png" alt="The title page for a presentation on Financial Aid and Scholarships"> </a>.
+
+        <div class="presentation-disc">
+
+
+          <div class="description">
+            To see the full presentation click on the image
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="presentation">
+        <a href="https://www.canva.com/design/DAFgdiVMAYc/NLOtX0hRmBGYKazy_YRwUw/edit?utm_content=DAFgdiVMAYc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><img class="presentations-img" src="Albertson-Race-and-Time-Presentation.png" alt="The title page for a presentation on Kindred A Graphic Novel by Octavia Butler"></a>.
+        <div class="presentation-disc">
+
+
+          <div class="description">
+
+            To see the full presentation click on the image
+
+
+            <br>
+            <br>
+            Note: This presentation is in the style of the novel it talks about.
+          </div>
+        </div>
+
+      </div>
+      <div class="presentation">
+        <a href="https://www.canva.com/design/DAFGyo8YRrs/GT6RDLGx2hAazknaN-oY0Q/edit?utm_content=DAFGyo8YRrs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> <img class="presentations-img" src="Circuits-in-the-Summer.png" alt="The title page for a presentation on how circuits work, made for children aged from 9-12"></a>.
+        <div class="presentation-disc">
+
+
+          <div class="description">
+            To see the full presentation click on the image
+
+          </div>
+        </div>
+      </div>
+
+      <div class="presentation">
+        <a href="https://www.canva.com/design/DAFHdegDhDI/uHBB48ew9LNVZ8G-8TU4Aw/edit?utm_content=DAFHdegDhDI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> <img class="presentations-img" src="sugar-cookie-slides.png" alt="The title page for a presentation on the science behind sugar cookies, made for children aged from 9-12"> </a>.
+        <div class="presentation-disc">
+
+
+          <div class="description">
+            To see the full presentation click on the image
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="end">
+
+      Thanks for coming by! <b>This page is also a part of my portfolio.</b> It has been hand coded with love and care and was based on my final project for a class I took called Internet Art. To see that (and my other projects) you can click the GitHub link below.
+
+    </div>
+    <div class="link-container">
+      <a href="https://www.linkedin.com/in/lyssa-albertson/" target="_blank"><img class="links" src="linkedin.png" alt="linkedin logo"></a>
+
+
+      <a href="https://github.com/lysalbertson" target="_blank"> <img class="links" src="github.png" alt="github logo"></a>
+
+      <a href="Albertson, Lyssa Resume January 2025.pdf" target="_blank" rel="noopener">
+        <img class="links" src="resume-link.png" alt="Resume Icon">
+      </a>
+
+    </div>
+
+    <script>
+      const flier = document.querySelectorAll('.flier');
+      const presentation = document.querySelectorAll('.presentation');
+
+
+      flier.forEach((element, index) => {
+        let isClicked = false;
+
+        element.addEventListener('mouseover', () => {
+          if (!isClicked) {
+            for (let i = index + 1; i < flier.length; i++) {
+              flier[i].classList.add('shift-flier');
+            }
+          }
+        });
+
+        element.addEventListener('mouseout', () => {
+          if (!isClicked) {
+            flier.forEach((el) => {
+              el.classList.remove('shift-flier');
+            });
+          }
+        });
+
+        element.addEventListener('click', () => {
+          isClicked = !isClicked;
+          for (let i = index + 1; i < flier.length; i++) {
+            flier[i].classList.toggle('shift-flier', isClicked);
+          }
+        });
+      });
+
+      flier.forEach((element) => {
+        element.addEventListener('click', () => {
+          const flierReview = element.querySelector('.flier-disc');
+          flierReview.classList.toggle('show');
+        });
+      });
+
+
+      presentation.forEach((element, index) => {
+        let isClicked = false;
+
+        element.addEventListener('mouseover', () => {
+          if (!isClicked) {
+            for (let i = index + 1; i < presentation.length; i++) {
+              presentation[i].classList.add('shift-presentation');
+            }
+          }
+        });
+
+        element.addEventListener('mouseout', () => {
+          if (!isClicked) {
+            presentation.forEach((el) => {
+              el.classList.remove('shift-presentation');
+            });
+          }
+        });
+
+        element.addEventListener('click', () => {
+          isClicked = !isClicked;
+          for (let i = index + 1; i < presentation.length; i++) {
+            presentation[i].classList.toggle('shift-presentation', isClicked);
+          }
+        });
+      });
+
+      presentation.forEach((element) => {
+        element.addEventListener('click', () => {
+          const presentationReview = element.querySelector('.presentation-disc');
+          presentationReview.classList.toggle('show');
+        });
+      });
+    </script>
+  </body>
+</html>
