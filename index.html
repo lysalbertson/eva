@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Dance With Eva</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xob0wfx.css">
   </head>
   <style>
     body {
@@ -18,6 +19,12 @@
       font-family: "Quicksand";
       src: url("Quicksand-VariableFont_wght.ttf")
     }
+    
+    @font-face {
+      font-family: "aileron", sans-serif;
+      font-weight: 700;
+      font-style: normal;>
+}
 
     .main-title {
     text-align: center;
@@ -35,13 +42,75 @@
     }
 
     .bio {
-      font-family: "Quicksand";
-      font-size: 150%;
+      font-family: "aileron";
+      font-size: 2vh;
       text-align: center;
       color: #ded9cc;
+      padding-top: 10%
 
 
 
+    }
+    
+    
+        .flier-container {
+      padding-bottom: 3vh;
+      padding-top: 3vh;
+      overflow-x: scroll;
+      white-space: nowrap;
+         
+    }
+
+    .flier-container::-webkit-scrollbar {
+      display: none
+    }
+
+    .flier {
+      position: relative;
+      transition: transform .7s ease;
+      display: inline-block;
+      justify-content: center
+    }
+
+    .flier-disc {
+      display: none;
+      font-size: 12px;
+      width: 20vh;
+      text-align: center;
+      position: absolute;
+      left: calc(100% + 1vw);
+      top: 0;
+      overflow-y: scroll;
+      padding-top:10vh 
+
+
+    }
+
+    .flier-disc.show {
+      display: block
+        
+    }
+
+    .flier-disc::-webkit-scrollbar {
+      display: none
+    }
+
+    .flier-img {
+      height: 300px;
+
+    }
+
+    .flier:hover .flier-disc {
+      display: block
+    }
+
+    .img-mini {
+      height: 180px;
+      text-align: center
+    }
+
+    .shift-flier {
+      transform: translateX(280px);
     }
 
     .end {
@@ -61,12 +130,12 @@
 
 
     .mains {
-      color: #ded9cc;
-      font-family: "title";
-      font-size: 50px;
-      position: relative;
-      top: 15px;
       text-align: center;
+    width: 100%;
+      height: auto;
+      max-width: 100%
+      
+      
       
     }
 
@@ -80,7 +149,7 @@
 
 
     .description {
-      font-family: "Quicksand";
+      font-family: "aileron";
       font-size: large;
       text-align: center;
       text-wrap: wrap;
@@ -140,7 +209,32 @@
       </div>
     </div>
 
-    <div class="mains"> Services </div>
+     <img class= mains src="Services.png" alt="Services">
+    
+    
+        <div class="flier-container">
+
+      <div class="flier">
+        <img class="flier-img" src="virtual.png" alt="Virtual lessons">
+        <div class="flier-disc">
+          <div class="description">
+ I will make you a custom choreograph with whatever song(s) help you celebrate your special day            <br>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flier">
+
+        <img class="flier-img" src="in-person.png" alt="In Person Lessons">
+        <div class="flier-disc">
+
+
+          <div class="description">
+These live in person classes are great for large groups or people who just want an additional hands on approach.          </div>
+          </div>
+        </div>
+      </div>
+    
     <div class="title-container">
       
    <img class="heading" src="virtual.png" alt="Virtual lessons">
